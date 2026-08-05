@@ -1,10 +1,12 @@
 import type { NextConfig } from 'next';
 import path from 'node:path';
 // import { version } from './package.json';
-import { readFileSync } from 'node:fs';
-const { version } = JSON.parse(
-  readFileSync(path.join(__dirname, 'package.json'), 'utf8'),
-);
+import { version } from './package.json' with { type: 'json' };
+
+// import { readFileSync } from 'node:fs';
+// const { version } = JSON.parse(
+//   readFileSync(path.join(__dirname, 'package.json'), 'utf8'),
+// );
 
 const nextConfig: NextConfig = {
   /* config options here */
