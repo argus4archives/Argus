@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "dotenv -c -- next dev",
-    "build": "dotenv -c -- next build",
+    "dev": "dotenv -c -- next dev --webpack",
+    "build": "dotenv -c -- next build --webpack",
     "start": "dotenv -c -- next start",
     "lint": "dotenv -c -- eslint .",
     "postinstall": "prisma generate",
