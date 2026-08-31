@@ -1,6 +1,12 @@
 import type { NextConfig } from 'next';
+import { createRequire } from 'node:module';
 import path from 'node:path';
-import { version } from './package.json';
+import { fileURLToPath } from 'node:url';
+
+const { version } = createRequire(import.meta.url)('./package.json') as {
+  version: string;
+};
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const nextConfig: NextConfig = {
   /* config options here */
