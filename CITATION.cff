@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Argus"
+abstract: >-
+  Argus is a project manager for library special collections and archives.
+  Library staff and researchers can create lists of bibliographic records
+  imported from a connected Ex Libris Alma/Primo catalog and/or from
+  ArchivesSpace, associate item records, and generate pull slips.
+authors:
+  - name: "Argus Archives Project"
+    affiliation: "Miami University Libraries"
+repository-code: "https://github.com/argus4archives/Argus"
+license: MIT
+version: "0.9.1"
+date-released: "2026-11-21"
+keywords:
+  - archives
+  - special collections
+  - library
+  - Alma
+  - ArchivesSpace
